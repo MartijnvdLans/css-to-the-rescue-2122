@@ -1,46 +1,11 @@
-# CSS to the Rescue @cmda-minor-web 2021 - 2022
+# Rubiks Cube
 
-Wij vinden het web fascinerend. De laatste jaren is CSS een volwassen en zeer krachtige taal geworden (niet langer een bottleneck - integendeel). Veel van de (nieuwe) **CSS-lekkernijen** worden echter nog niet ten volle benut. Sommige delen van de spec worden onterecht (nog) niet bemind, andere delen zijn zo groot en complex dat we mogelijkheden nog niet hebben doorgrond. Aan jou de mooie opdracht om de onontgonnen delen van de CSS-wereld in kaart te brengen.
+Ik heb gekozen om voor dit project een rubiks cube te maken. Ik heb hier voor gekozen omdat de 2 leukste opdrachten de vuurwerkshow en de rubiks cube waren. Nu weet (denk) ik dat ik wel goed ben in CSS en zo leek de Rubiks cube mij ook een grotere uitdaging dan de vuurwerkshow.
 
-**In dit vierweekse vak ga je experimenteren met (voor jou) nieuwe CSS technieken - om daarna/mee een innovatieve, experimentele én aangename ervaring te creëren - met alleen vanilla HTML en vanilla CSS (frameworks, preprocessors, libraries en JavaScript zijn niet toegestaan).**
+## Week 1
 
-Goed om te weten: Het experiment wordt gewaardeerd - zelfs/zeker als het niet (helemaal) lukt. Voel je vrij om verder te gaan dan de CSS-technieken die je al beheerst.
+In week 1 is het mij gelukt om een kubus te maken, deze 26x te kopieren en ze ook goed te positioneren, waardoor het op ee rubiks cube lijkt.
 
-## Dingen om vooraf te doen
-- 🔱 **Fork** deze repository.
-- ✅ [**Enroll** je voor de minor via de courselector](https://icthva.sharepoint.com/sites/courseselector#/CourseSelector/web-design-and-development/2021-2022) (dan kun je je werk straks ook op [DLO](https://dlo.mijnhva.nl/d2l/home/324147) opleveren).
-- 📒 **Bekijk** het [programma](https://cmda-minor-web.github.io/css-to-the-rescue-2122/files/CSSttR-2122-Kick-off.pdf) (pdf 48MB), [het quizje](https://cmda-minor-web.github.io/css-to-the-rescue-2122/files/CSSttR-2122-Quizje.pdf) (pdf 2MB) en de [kennismakingsoefening](https://cmda-minor-web.github.io/css-to-the-rescue-2122/docs/oefening.html) alvast even.
+## Week 2
 
-## Opdrachten
-Het vak bestaat uit:
-- [Een kennismakingsoefening](https://cmda-minor-web.github.io/css-to-the-rescue-2122/oefening.html)
-- [De eindopdracht](https://cmda-minor-web.github.io/css-to-the-rescue-2122/index.html)
-
-De [beoordelingscriteria voor de eindopdracht](https://cmda-minor-web.github.io/css-to-the-rescue-2122/beoordelingsformulier.html) op een rijte.
-
-## Themasessies
-Schrijf je in het [CSSttR channel](https://teams.microsoft.com/l/channel/19%3a1261f148f4a14a788c98784a96d361c4%40thread.tacv2/03%2520-%2520CSS%2520to%2520the%2520Rescue?groupId=36b2af3f-d616-4e89-b714-f45196f2a6ad&tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7) bij 'Files' in de 'Indeling en Planning' Excel in voor zowel woensdag als donderdag in voor een themasessie naar je keuze (1 per dag):
-- [Materiaal voor de themasessies](https://cmda-minor-web.github.io/css-to-the-rescue-2122/themas.html)
-
-## Programma
-Het vak beslaat 4 weken. Bekijk de [kick-off presentatie](https://cmda-minor-web.github.io/css-to-the-rescue-2122/files/CSSttR-2122-Kick-off.pdf) (pdf 48MB). 
-
-In Teams vind je het [CSSttR channel](https://teams.microsoft.com/l/channel/19%3a1261f148f4a14a788c98784a96d361c4%40thread.tacv2/03%2520-%2520CSS%2520to%2520the%2520Rescue?groupId=36b2af3f-d616-4e89-b714-f45196f2a6ad&tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7) bij 'Files' de Excel met de 'Indeling en Planning'. Daar schrijf je je ook in voor themasessies en het eindgesprek.
-
-Colleges, lessen en gesprekken vinden plaats in het TTH (4e verdieping :-).
-
-## Docenten
-- Vasilis van Gemert
-- Sanne 't Hooft
-
-## Leerdoelen
-- Je kunt experimenteren met (voor jou) nieuwe css-technieken - om de mogelijkheden op waarde te schatten en te gebruiken waar gepast.
-- Je hebt begrip van de volle kracht en mogelijkheden van CSS. Je laat zien dat CSS meer kan dan allen web pages 'stylen'.
-- Je hebt begrip van de interactie-technieken van CSS (en HTML). De UX is aangenaam bruikbaar binnen de gekozen context(en).
-- Je hebt begrip hoe progressive enhancement elegant toe te passen. Je laat zien dat je cascade, inheritance en specificity kunt toepassen.
-
-
-## De Selector First CSS & No JS aanpak
-Het **eerste uitgangspunt** is dat je *geen* ID's en classes gebruikt. Niet omdat ze niet nuttig zijn, maar om te oefenen met de [vele CSS selectoren](https://css-tricks.com/almanac/) die je tot je beschikking hebt. ID's mag je alleen gebruiken om de :target selector te triggeren en uiteraard om labels te koppelen aan inputs. En als het echt echt echt niet anders kan, heb je permissie om een enkele class toe te voegen.
-
-Een **tweede uitgangspunt** is dat je *geen* JavaScript gebruikt. Als iets niet kan met CSS, dan zal je iets anders moeten verzinnen om te maken. We onderzoeken de mogelijkheden van CSS in dit vak, en niet die van JS.
+In week 2 heb ik heel lang zitten kloten met het perspective. Een hele lange tijd werd de kubus plat als ik heb probeerde te roteren. Nu dat dit is opgelost zit ik er helaas nog mee dat wanneer ik de kubus probeer te draaien, dit niet op de plaats zelf gebeurd maar deze alle kanten op vliegt.
