@@ -9,3 +9,7 @@ In week 1 is het mij gelukt om een kubus te maken, deze 26x te kopieren en ze oo
 ## Week 2
 
 In week 2 heb ik heel lang zitten kloten met het perspective. Een hele lange tijd werd de kubus plat als ik heb probeerde te roteren. Nu dat dit is opgelost zit ik er helaas nog mee dat wanneer ik de kubus probeer te draaien, dit niet op de plaats zelf gebeurd maar deze alle kanten op vliegt.
+
+## Week 3
+
+-
