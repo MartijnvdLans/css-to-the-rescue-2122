@@ -14,10 +14,21 @@ html {
     height: 100vh;
 }
 
+body {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #555;
+}
+
 main {
     width: calc(var(--cube-width) * 3);
     height: calc(var(--cube-width) * 3);
     perspective: 2000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
 }
 
 section {
@@ -26,8 +37,8 @@ section {
     position: relative;
     transform-style: preserve-3d;
     place-items: center;
-    transform: rotateX(-15deg) rotateY(-30deg)
-
+    transform: rotateX(-15deg) rotateY(-30deg);
+    transition: .5s;
 }
   
 ul {
@@ -41,376 +52,10 @@ ul {
   
 li {
     position: absolute;
+    background-color: #000;
     border: 2px solid #000;
     width: calc(var(--cube-width));
     height: calc(var(--cube-width));
     opacity: 1;
     border-radius: .4em;
-}
-
-li:nth-child(1) {
-    background-color: red;
-    transform: rotateY(0deg) translateZ(calc(var(--cube-width) / 2));
-}
-
-li:nth-child(2) {
-    background: green;
-    transform: rotateY(90deg) translateZ(calc(var(--cube-width) / 2));
-}
-
-li:nth-child(3) {
-    background: blue;
-    transform: rotateY(180deg) translateZ(calc(var(--cube-width) / 2));
-}
-
-li:nth-child(4) {
-    background: yellow;
-    transform: rotateY(-90deg) translateZ(calc(var(--cube-width) / 2));
-}
-
-li:nth-child(5) {
-    background: orange;
-    transform: rotateX(90deg) translateZ(calc(var(--cube-width) / 2));
-}
-
-li:nth-child(6) {
-    background: white;
-    transform: rotateX(-90deg) translateZ(calc(var(--cube-width) / 2));
-}
-
-ul:first-child {
-    transform: translateZ(calc(var(--cube-width) + 0 * var(--cube-width)));
-    --index: 1;
-}
-
-ul:nth-child(2) {
-    transform: translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) + 0 * var(--cube-width)));
-    --index: 2;
-    z-index: 999
-}
-
-ul:nth-child(3) {
-    transform: translate(calc(var(--cube-width) * 2), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) + 0 * var(--cube-width)));
-    --index: 3;
-}
-
-ul:nth-child(4) {
-    transform: translate(calc(var(--cube-width) * 0), calc(var(--cube-width) - 0 * var(--cube-width))) translateZ(calc(var(--cube-width) + 0 * var(--cube-width)));
-    --index: 4;
-}
-
-ul:nth-child(5) {
-    transform: translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 0 * var(--cube-width))) translateZ(calc(var(--cube-width) + 0 * var(--cube-width)));
-    --index: 5;
-}
-
-ul:nth-child(6) {
-    transform: translate(calc(var(--cube-width) * 2), calc(var(--cube-width) - 0 * var(--cube-width))) translateZ(calc(var(--cube-width) + 0 * var(--cube-width)));
-    --index: 6;
-}
-
-ul:nth-child(7) {
-    transform: translate(calc(var(--cube-width) * 0), calc(var(--cube-width) + 1 * var(--cube-width))) translateZ(calc(var(--cube-width) + 0 * var(--cube-width)));
-    --index: 7;
-}
-
-ul:nth-child(8) {
-    transform: translate(calc(var(--cube-width) * 1), calc(var(--cube-width) + 1 * var(--cube-width))) translateZ(calc(var(--cube-width) + 0 * var(--cube-width)));
-    --index: 8;
-}
-
-ul:nth-child(9) {
-    transform: translate(calc(var(--cube-width) * 2), calc(var(--cube-width) + 1 * var(--cube-width))) translateZ(calc(var(--cube-width) + 0 * var(--cube-width)));
-    --index: 9;
-}
-
-ul:nth-child(10) {
-    transform: translate(calc(var(--cube-width) * 0), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
-    --index: 10;
-}
-
-ul:nth-child(11) {
-    transform: translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
-    --index: 11;
-}
-
-ul:nth-child(12) {
-    transform: translate(calc(var(--cube-width) * 2), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
-    --index: 12;
-}
-
-ul:nth-child(13) {
-    transform: translate(calc(var(--cube-width) * 0), calc(var(--cube-width) - 0 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
-    --index: 13;
-}
-
-ul:nth-child(14) {
-    transform: translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 0 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
-    --index: 14;
-}
-
-ul:nth-child(15) {
-    transform: translate(calc(var(--cube-width) * 2), calc(var(--cube-width) - 0 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
-    --index: 15;
-}
-
-ul:nth-child(16) {
-    transform: translate(calc(var(--cube-width) * 0), calc(var(--cube-width) + 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
-    --index: 16;
-}
-
-ul:nth-child(17) {
-    transform: translate(calc(var(--cube-width) * 1), calc(var(--cube-width) + 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
-    --index: 17;
-}
-
-ul:nth-child(18) {
-    transform: translate(calc(var(--cube-width) * 2), calc(var(--cube-width) + 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
-    --index: 18;
-}
-
-ul:nth-child(19) {
-    transform: translate(calc(var(--cube-width) * 0), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 2 * var(--cube-width)));
-    --index: 19;
-}
-
-ul:nth-child(20) {
-    transform: translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 2 * var(--cube-width)));
-    --index: 20;
-}
-
-ul:nth-child(21) {
-    transform: translate(calc(var(--cube-width) * 2), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 2 * var(--cube-width)));
-    --index: 21;
-}
-
-ul:nth-child(22) {
-    transform: translate(calc(var(--cube-width) * 0), calc(var(--cube-width) - 0 * var(--cube-width))) translateZ(calc(var(--cube-width) - 2 * var(--cube-width)));
-    --index: 22;
-}
-
-ul:nth-child(23) {
-    transform: translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 0 * var(--cube-width))) translateZ(calc(var(--cube-width) - 2 * var(--cube-width)));
-    --index: 23;
-}
-
-ul:nth-child(24) {
-    transform: translate(calc(var(--cube-width) * 2), calc(var(--cube-width) - 0 * var(--cube-width))) translateZ(calc(var(--cube-width) - 2 * var(--cube-width)));
-    --index: 24;
-}
-
-ul:nth-child(25) {
-    transform: translate(calc(var(--cube-width) * 0), calc(var(--cube-width) + 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 2 * var(--cube-width)));
-    --index: 25;
-}
-
-ul:nth-child(26) {
-    transform: translate(calc(var(--cube-width) * 1), calc(var(--cube-width) + 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 2 * var(--cube-width)));
-    --index: 26;
-}
-
-ul:nth-child(27) {
-    transform: translate(calc(var(--cube-width) * 2), calc(var(--cube-width) + 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 2 * var(--cube-width)));
-    --index: 27;
-} 
-
-
-
-@keyframes kubusDown90 {
-    from {
-        transform: rotateX(-15deg) rotateY(-30deg)
-    }
-
-    to {
-        transform: rotateX(-15deg) rotateY(60deg)
-    }
-}
-
-@keyframes kubusDown180 {
-    from {
-        transform: rotateX(-15deg) rotateY(60deg)
-    }
-
-    to {
-        transform: rotateX(-15deg) rotateY(150deg)
-    }
-}
-
-@keyframes kubusDown270 {
-    from {
-        transform: rotateX(-15deg) rotateY(150deg)
-    }
-
-    to {
-        transform: rotateX(-15deg) rotateY(240deg)
-    }
-}
-
-@keyframes kubusDown360 {
-    from {
-        transform: rotateX(-15deg) rotateY(240deg)
-    }
-
-    to {
-        transform: rotateX(-15deg) rotateY(330deg)
-    }
-}
-
-@keyframes kubusTurnDown {
-    from {
-        transform: rotateX(-15deg) rotateY(-30deg)
-    }
-
-    to {
-        transform: rotateX(15deg) rotateY(-30deg)
-    }
-}
-
-@keyframes kubusTurnUp {
-    from {
-        transform: rotateX(15deg) rotateY(-30deg)
-    }
-
-    to {
-        transform: rotateX(-15deg) rotateY(-30deg)
-    }
-}
-
-main:hover ul:nth-of-type(3) {
-    /* transform:rotatex(0turn) rotatey(0) rotatez(-.5turn) translate3d(var(--maat), calc(var(--maat) * -1), var(--maat)); */
-    transition: 1s;
-}
-
-input {
-    position: absolute;
-    top: 10px;
-}
-
-input:not(:nth-child(-1n +2)) {
-    right: 40%;
-}
-
-.radioDown2, .radioDown3, .radioDown4, .radioTurn2 {
-    display: none;
-}
-
-
-/* TURN ANIMATIONS */
-
-label img {
-    width: 2em;
-}
-
-.radioDown:checked ~ main section {
-    animation: kubusDown90 .5s;
-    animation-fill-mode: forwards;
-}
-
-.radioDown:checked {
-    display: none;
-}
-
-.radioDown:checked ~ .radioDown2 {
-    display: unset;
-}
-
-.radioDown2:checked ~ main section {
-    animation: kubusDown180 .5s;
-    animation-fill-mode: forwards;
-}
-
-.radioDown2:checked {
-    display: none;
-}
-
-.radioDown2:checked ~ .radioDown3 {
-    display: unset;
-}
-
-.radioDown3:checked ~ main section {
-    animation: kubusDown270 .5s;
-    animation-fill-mode: forwards;
-}
-
-.radioDown3:checked {
-    display: none;
-}
-
-.radioDown3:checked ~ .radioDown4 {
-    display: unset;
-}
-
-.radioDown4:checked ~ main section {
-    animation: kubusDown360 .5s;
-    animation-fill-mode: forwards;
-}
-
-.radioDown4:checked {
-    display: none;
-}
-
-.radioDown4:checked ~ .radioDown {
-    display: unset;
-}
-
-.radioTurn:checked ~ main section {
-    animation: kubusTurnDown .5s;
-    animation-fill-mode: forwards;
-}
-
-.radioTurn:checked {
-    display: none;
-}
-
-.radioTurn:checked ~ .radioTurn2 {
-    display: unset;
-}
-
-.radioTurn2:checked ~ main section {
-    animation: kubusTurnUp .5s;
-    animation-fill-mode: forwards;
-}
-
-.radioTurn2:checked {
-    display: none;
-}
-
-.radioTurn2:checked ~ .radioTurn {
-    display: unset;
-}
-
-
-
-/* KUBUS MIDDLE TURN */
-
-main:hover ul:nth-child(2) {
-    transform: rotateX(-90deg) translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 2 * var(--cube-width))) translateZ(calc(var(--cube-width) + 1 * var(--cube-width)));
-}
-
-main:hover ul:nth-child(11) {
-    transform: rotateX(-90deg) translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 2 * var(--cube-width))) translateZ(calc(var(--cube-width) - 0 * var(--cube-width)));
-}
-
-main:hover ul:nth-child(20) {
-    transform: rotateX(-90deg) translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 2 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
-}
-
-main:hover ul:nth-child(23) {
-    transform: rotateX(-90deg) translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
-}
-
-main:hover ul:nth-child(26) {
-    transform: rotateX(-90deg) translate(calc(var(--cube-width) * 1), calc(var(--cube-width) + 0 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
-}
-
-main:hover ul:nth-child(17) {
-    transform: rotateX(-90deg) translate(calc(var(--cube-width) * 1), calc(var(--cube-width) + 0 * var(--cube-width))) translateZ(calc(var(--cube-width) - 0 * var(--cube-width)));
-}
-
-main:hover ul:nth-child(8) {
-    transform: rotateX(-90deg) translate(calc(var(--cube-width) * 1), calc(var(--cube-width) + 0 * var(--cube-width))) translateZ(calc(var(--cube-width) + 1 * var(--cube-width)));
-}
-
-main:hover ul:nth-child(5) {
-    transform: rotateX(-90deg) translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) + 1 * var(--cube-width)));
 }

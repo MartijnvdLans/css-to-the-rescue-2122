@@ -1,0 +1,107 @@
+/* --------------- */
+/* INVERTED COLORS */
+/* --------------- */
+
+input:nth-of-type(7):checked ~ main section ul:nth-child(-n+9) li:nth-child(1) {
+    border: 5px solid red;
+    background: #000
+}
+
+input:nth-of-type(7):checked ~ main section ul:nth-child(3n-6) li:nth-child(2) {
+    border: 5px solid green;
+    background: #000
+}
+
+input:nth-of-type(7):checked ~ main section ul:nth-last-child(-1n+9) li:nth-child(3) {
+    border: 5px solid royalblue;
+    background: #000
+}
+
+input:nth-of-type(7):checked ~ main section ul:nth-child(3n-2) li:nth-child(4) {
+    border: 5px solid yellow;
+    background: #000
+}
+
+input:nth-of-type(7):checked ~ main section ul:nth-child(9n+1) li:nth-child(5) {
+    border: 5px solid white;
+    background: #000;
+}
+
+input:nth-of-type(7):checked ~ main section ul:nth-child(9n+2) li:nth-child(5) {
+    border: 5px solid white;
+    background: #000;
+}
+
+input:nth-of-type(7):checked ~ main section ul:nth-child(9n+3) li:nth-child(5) {
+    border: 5px solid white;
+    background: #000;
+}
+
+input:nth-of-type(7):checked ~ main section ul:nth-child(9n+7) li:nth-child(6) {
+    border: 5px solid orange;
+    background: #000;
+}
+
+input:nth-of-type(7):checked ~ main section ul:nth-child(9n+8) li:nth-child(6) {
+    border: 5px solid orange;
+    background: #000;
+}
+
+input:nth-of-type(7):checked ~ main section ul:nth-child(9n+9) li:nth-child(6) {
+    border: 5px solid orange;
+    background: #000;
+}
+
+/* ------------- */
+/* NORMAL COLORS */
+/* ------------- */
+
+input:nth-of-type(8):checked ~ main section ul:nth-child(-n+9) li:nth-child(1) {
+    border: 5px solid #000;
+    background: red;
+}
+
+input:nth-of-type(8):checked ~ main section ul:nth-child(3n-6) li:nth-child(2) {
+    border: 5px solid #000;
+    background-color: green;
+}
+
+input:nth-of-type(8):checked ~ main section ul:nth-last-child(-1n+9) li:nth-child(3) {
+    border: 5px solid #000;
+    background-color: royalblue;
+}
+
+input:nth-of-type(8):checked ~ main section ul:nth-child(3n-2) li:nth-child(4) {
+    border: 5px solid #000;
+    background-color: yellow;
+}
+
+input:nth-of-type(8):checked ~ main section ul:nth-child(9n+1) li:nth-child(5), ul:nth-child(9n+2) li:nth-child(5), ul:nth-child(9n+3) li:nth-child(5) {
+    border: 5px solid #000;
+    background-color: white;
+}
+
+input:nth-of-type(8):checked ~ main section ul:nth-child(9n+7) li:nth-child(6), ul:nth-child(9n+8) li:nth-child(6), ul:nth-child(9n+9) li:nth-child(6) {
+    border: 5px solid #000;
+    background-color: orange;
+}
+
+/* ------- */
+/* BUTTONS */
+/* ------- */
+
+input:nth-of-type(7):checked ~ label:nth-of-type(7) {
+    display: none;
+}
+
+input:nth-of-type(7):checked ~ label:nth-of-type(8) {
+    display: unset;
+}
+
+input:nth-of-type(8):checked ~ label:nth-of-type(8) {
+    display: none;
+}
+
+input:nth-of-type(8):checked ~ label:nth-of-type(7) {
+    display: unset;
+}

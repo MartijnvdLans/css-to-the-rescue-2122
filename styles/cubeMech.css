@@ -1,0 +1,35 @@
+/* ----------------- */
+/* KUBUS MIDDLE TURN */
+/* ----------------- */
+
+main:hover ul:nth-child(2) {
+    transform: rotateX(-90deg) translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 2 * var(--cube-width))) translateZ(calc(var(--cube-width) + 1 * var(--cube-width)));
+}
+
+main:hover ul:nth-child(11) {
+    transform: rotateX(-90deg) translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 2 * var(--cube-width))) translateZ(calc(var(--cube-width) - 0 * var(--cube-width)));
+}
+
+main:hover ul:nth-child(20) {
+    transform: rotateX(-90deg) translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 2 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
+}
+
+main:hover ul:nth-child(23) {
+    transform: rotateX(-90deg) translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
+}
+
+main:hover ul:nth-child(26) {
+    transform: rotateX(-90deg) translate(calc(var(--cube-width) * 1), calc(var(--cube-width) + 0 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
+}
+
+main:hover ul:nth-child(17) {
+    transform: rotateX(-90deg) translate(calc(var(--cube-width) * 1), calc(var(--cube-width) + 0 * var(--cube-width))) translateZ(calc(var(--cube-width) - 0 * var(--cube-width)));
+}
+
+main:hover ul:nth-child(8) {
+    transform: rotateX(-90deg) translate(calc(var(--cube-width) * 1), calc(var(--cube-width) + 0 * var(--cube-width))) translateZ(calc(var(--cube-width) + 1 * var(--cube-width)));
+}
+
+main:hover ul:nth-child(5) {
+    transform: rotateX(-90deg) translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) + 1 * var(--cube-width)));
+}

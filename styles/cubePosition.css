@@ -1,0 +1,172 @@
+/* ------------------------- */
+/* POSITION SMALL CUBE SIDES */
+/* ------------------------- */
+
+li:nth-child(1) {
+    transform: rotateY(0deg) translateZ(calc(var(--cube-width) / 2));
+}
+
+li:nth-child(2) {
+    transform: rotateY(90deg) translateZ(calc(var(--cube-width) / 2));
+}
+
+li:nth-child(3) {
+    transform: rotateY(180deg) translateZ(calc(var(--cube-width) / 2));
+}
+
+li:nth-child(4) {
+    transform: rotateY(-90deg) translateZ(calc(var(--cube-width) / 2));
+}
+
+li:nth-child(5) {
+    transform: rotateX(90deg) translateZ(calc(var(--cube-width) / 2));
+}
+
+li:nth-child(6) {
+    transform: rotateX(-90deg) translateZ(calc(var(--cube-width) / 2));
+}
+
+
+
+
+/* ------------------ */
+/* POSITION EACH CUBE */
+/* ------------------ */
+
+
+
+ul:first-child {
+    transform: translateZ(calc(var(--cube-width) + 0 * var(--cube-width)));
+    --index: 1;
+}
+
+ul:nth-child(2) {
+    transform: translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) + 0 * var(--cube-width)));
+    --index: 2;
+    z-index: 999
+}
+
+ul:nth-child(3) {
+    transform: translate(calc(var(--cube-width) * 2), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) + 0 * var(--cube-width)));
+    --index: 3;
+}
+
+ul:nth-child(4) {
+    transform: translate(calc(var(--cube-width) * 0), calc(var(--cube-width) - 0 * var(--cube-width))) translateZ(calc(var(--cube-width) + 0 * var(--cube-width)));
+    --index: 4;
+}
+
+ul:nth-child(5) {
+    transform: translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 0 * var(--cube-width))) translateZ(calc(var(--cube-width) + 0 * var(--cube-width)));
+    --index: 5;
+}
+
+ul:nth-child(6) {
+    transform: translate(calc(var(--cube-width) * 2), calc(var(--cube-width) - 0 * var(--cube-width))) translateZ(calc(var(--cube-width) + 0 * var(--cube-width)));
+    --index: 6;
+}
+
+ul:nth-child(7) {
+    transform: translate(calc(var(--cube-width) * 0), calc(var(--cube-width) + 1 * var(--cube-width))) translateZ(calc(var(--cube-width) + 0 * var(--cube-width)));
+    --index: 7;
+}
+
+ul:nth-child(8) {
+    transform: translate(calc(var(--cube-width) * 1), calc(var(--cube-width) + 1 * var(--cube-width))) translateZ(calc(var(--cube-width) + 0 * var(--cube-width)));
+    --index: 8;
+}
+
+ul:nth-child(9) {
+    transform: translate(calc(var(--cube-width) * 2), calc(var(--cube-width) + 1 * var(--cube-width))) translateZ(calc(var(--cube-width) + 0 * var(--cube-width)));
+    --index: 9;
+}
+
+ul:nth-child(10) {
+    transform: translate(calc(var(--cube-width) * 0), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
+    --index: 10;
+}
+
+ul:nth-child(11) {
+    transform: translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
+    --index: 11;
+}
+
+ul:nth-child(12) {
+    transform: translate(calc(var(--cube-width) * 2), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
+    --index: 12;
+}
+
+ul:nth-child(13) {
+    transform: translate(calc(var(--cube-width) * 0), calc(var(--cube-width) - 0 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
+    --index: 13;
+}
+
+ul:nth-child(14) {
+    transform: translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 0 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
+    --index: 14;
+}
+
+ul:nth-child(15) {
+    transform: translate(calc(var(--cube-width) * 2), calc(var(--cube-width) - 0 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
+    --index: 15;
+}
+
+ul:nth-child(16) {
+    transform: translate(calc(var(--cube-width) * 0), calc(var(--cube-width) + 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
+    --index: 16;
+}
+
+ul:nth-child(17) {
+    transform: translate(calc(var(--cube-width) * 1), calc(var(--cube-width) + 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
+    --index: 17;
+}
+
+ul:nth-child(18) {
+    transform: translate(calc(var(--cube-width) * 2), calc(var(--cube-width) + 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 1 * var(--cube-width)));
+    --index: 18;
+}
+
+ul:nth-child(19) {
+    transform: translate(calc(var(--cube-width) * 0), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 2 * var(--cube-width)));
+    --index: 19;
+}
+
+ul:nth-child(20) {
+    transform: translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 2 * var(--cube-width)));
+    --index: 20;
+}
+
+ul:nth-child(21) {
+    transform: translate(calc(var(--cube-width) * 2), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 2 * var(--cube-width)));
+    --index: 21;
+}
+
+ul:nth-child(22) {
+    transform: translate(calc(var(--cube-width) * 0), calc(var(--cube-width) - 0 * var(--cube-width))) translateZ(calc(var(--cube-width) - 2 * var(--cube-width)));
+    --index: 22;
+}
+
+ul:nth-child(23) {
+    transform: translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 0 * var(--cube-width))) translateZ(calc(var(--cube-width) - 2 * var(--cube-width)));
+    --index: 23;
+}
+
+ul:nth-child(24) {
+    transform: translate(calc(var(--cube-width) * 2), calc(var(--cube-width) - 0 * var(--cube-width))) translateZ(calc(var(--cube-width) - 2 * var(--cube-width)));
+    --index: 24;
+}
+
+ul:nth-child(25) {
+    transform: translate(calc(var(--cube-width) * 0), calc(var(--cube-width) + 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 2 * var(--cube-width)));
+    --index: 25;
+}
+
+ul:nth-child(26) {
+    transform: translate(calc(var(--cube-width) * 1), calc(var(--cube-width) + 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 2 * var(--cube-width)));
+    --index: 26;
+}
+
+ul:nth-child(27) {
+    transform: translate(calc(var(--cube-width) * 2), calc(var(--cube-width) + 1 * var(--cube-width))) translateZ(calc(var(--cube-width) - 2 * var(--cube-width)));
+    --index: 27;
+} 

@@ -6,15 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/cubeColors.css">
+    <link rel="stylesheet" href="./styles/cubePosition.css">
+    <link rel="stylesheet" href="./styles/cubeTurns.css">
+    <link rel="stylesheet" href="./styles/cubeMech.css">
 </head>
 <body>
-    <body>
-        <input type="radio" name="clickTurn" class="radioTurn">
-        <input type="radio" name="clickTurn" class="radioTurn2">
-        <input type="radio" name="clickDown" class="radioDown">
-        <input type="radio" name="clickDown" class="radioDown2">
-        <input type="radio" name="clickDown" class="radioDown3">
-        <input type="radio" name="clickDown" class="radioDown4">
+        <input type="radio" name="clickDown" id="radioDown1">
+        <input type="radio" name="clickDown" id="radioDown2">
+        <input type="radio" name="clickDown" id="radioDown3">
+        <input type="radio" name="clickDown" id="radioDown4" checked>
+        <input type="radio" name="clickView" id="radioturn1">
+        <input type="radio" name="clickView" id="radioturn2" checked>
+        <label for="radioDown1">Turn</label>
+        <label for="radioDown2">Turn</label>
+        <label for="radioDown3">Turn</label>
+        <label for="radioDown4">Turn</label>
+        <label for="radioturn1">Down</label>
+        <label for="radioturn2">Up</label>
+
+        <input type="radio" name="invert" id="invert">
+        <input type="radio" name="invert" id="invertback">
+        <label for="invert">Invert colors</label>
+        <label for="invertback">Invert colors</label>
+
         <main>
             <section>
                 <ul>
@@ -235,6 +250,5 @@
                 </ul>
             </section>
         </main>
-    </body>
 </body>
 </html>

@@ -1,0 +1,144 @@
+main:hover ul:nth-of-type(3) {
+    /* transform:rotatex(0turn) rotatey(0) rotatez(-.5turn) translate3d(var(--maat), calc(var(--maat) * -1), var(--maat)); */
+    transition: 1s;
+}
+
+input {
+    visibility: hidden;
+}
+
+label {
+    position: absolute;
+    bottom: 2em;
+    color: #fff;
+    padding: 2em;
+    font-size: 1em;
+    background: #000;
+    font-family: monospace;
+    font-weight: bolder;
+    text-transform: uppercase;
+    left: 50%;
+    transform: translate(-110%, -50%);
+    min-width: 10em;
+    text-align: center;
+}
+
+label:hover {
+    background-color: #aaa;
+    color: #000
+}
+
+label:not(:nth-of-type(-1n +4)) {
+    transform: translate(10%, -50%);
+}
+
+label:nth-of-type(7), label:nth-of-type(8) {
+    bottom: 8em;
+    transform: translate(-50%, -50%);
+    min-width: 22em;
+}
+
+label:nth-of-type(2), label:nth-of-type(3), label:nth-of-type(4), label:nth-of-type(5), label:nth-of-type(7)  {
+    display: none;
+}
+
+label img {
+    width: 2em;
+}
+
+/* ------------------ */
+/* INTERACTIE KNOPPEN */
+/* ------------------ */
+
+input:nth-of-type(1):checked ~ label:nth-of-type(1) {
+    display: none;
+}
+
+input:nth-of-type(1):checked ~ label:nth-of-type(2) {
+    display: unset;
+}
+
+
+input:nth-of-type(2):checked ~ label:nth-of-type(2) {
+    display: none;
+}
+
+input:nth-of-type(2):checked ~ label:nth-of-type(3) {
+    display: unset;
+}
+
+input:nth-of-type(3):checked ~ label:nth-of-type(3) {
+    display: none;
+}
+
+input:nth-of-type(3):checked ~ label:nth-of-type(4) {
+    display: unset;
+}
+
+input:nth-child(4):checked ~ label:nth-child(4) {
+    display: none;
+}
+
+input:nth-child(4):checked ~ label:nth-child(1) {
+    display: unset;
+}
+
+/* UP AND DOWN BUTTON */
+
+input:nth-of-type(5):checked ~ label:nth-of-type(5) {
+    display: none;
+}
+
+input:nth-of-type(5):checked ~ label:nth-of-type(6) {
+    display: unset;
+}
+
+input:nth-of-type(6):checked ~ label:nth-of-type(6) {
+    display: none;
+}
+
+input:nth-of-type(6):checked ~ label:nth-of-type(5) {
+    display: unset;
+}
+
+
+/* -------- */
+/* TOP VIEW */
+/* -------- */
+
+input:nth-of-type(1):checked ~ input:nth-of-type(6):checked ~ main section {
+    transform: rotateX(-15deg) rotateY(60deg)
+}
+
+input:nth-of-type(2):checked ~ input:nth-of-type(6):checked ~ main section {
+    transform: rotateX(-15deg) rotateY(150deg)
+}
+
+input:nth-of-type(3):checked ~ input:nth-of-type(6):checked ~ main section {
+    transform: rotateX(-15deg) rotateY(240deg)
+}
+
+input:nth-of-type(4):checked ~ input:nth-of-type(6):checked ~ main section {
+    transform: rotateX(-15deg) rotateY(330deg)
+}
+
+
+/* -------- */
+/* BOTTOM VIEW */
+/* -------- */
+
+input:nth-of-type(1):checked ~ input:nth-of-type(5):checked ~ main section {
+    transform: rotateX(15deg) rotateY(60deg)
+}
+
+input:nth-of-type(2):checked ~ input:nth-of-type(5):checked ~ main section {
+    transform: rotateX(15deg) rotateY(150deg)
+}
+
+input:nth-of-type(3):checked ~ input:nth-of-type(5):checked ~ main section {
+    transform: rotateX(15deg) rotateY(240deg)
+}
+
+input:nth-of-type(4):checked ~ input:nth-of-type(5):checked ~ main section {
+    transform: rotateX(15deg) rotateY(330deg)
+}
