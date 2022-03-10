@@ -43,7 +43,6 @@ ul:first-child {
 ul:nth-child(2) {
     transform: translate(calc(var(--cube-width) * 1), calc(var(--cube-width) - 1 * var(--cube-width))) translateZ(calc(var(--cube-width) + 0 * var(--cube-width)));
     --index: 2;
-    z-index: 999
 }
 
 ul:nth-child(3) {
