@@ -70,6 +70,47 @@ Waar ik pas echt tegen aan liep was dat ik 2 verschille radio buttons wilde voor
 
 ### Wat heb ik gedaan?
 
-...
+Dit was een behoorlijk drukke week voor me, omdat ik behoorlijk achter liep met WAFS. als focus deze week begon ik met de lables goed laten functioneren, omdat dit in week 3 nog niet goed ging. Deze week heb ik er voor gekozen dit anders aan te pakken, zonder keyframe animaties. Ik heb hiervoor gekozen omdat ik met keyframe animaties met te veel factoren rekening moest houden en enorm veel labels zou hebben.
+
+Door mee te kijken met anderen uit de klas kwam ik er achter dat er een makkelijkere manier was die maar om 8 inputs/labels in totaal vroeg. Zo is het me uiteindelijk gelukt om de kubus rond te laten draaien, helaas zorgde dit er wel voor dat de kubus terug schiet wanneer deze terug draait naar het eerste vlak, wat jammer is, maar nu gelukkig wel op elk but naar boven en beneden kan draaien.
+
+<img src="./images/turnCube.gif" WIDTH="400px">
+
+Vervolgen wou ik kijken of ik voor het draaien van een vlak kon krijgen in een knop inplaats van een hover, helaas liep ik hier enorm tegen aan.
+
+In de tijd dat ik zat na te denken hoe ik dit kon oplossen wou ik wat toevoegen aan de kubus, zo kwam ik op het idee om een invert button toe te voegen, waardoor de kleuren verwisselen.
+
+Wat ik ook heb veranderd, is dat eerst alle kubussen dezelfde kleuren hadden. Ik heb nu geprobeerd om alle kleuren alleen vanaf 1 kant te laten zien met nth selectoren om de rest zwart te laten. Op deze manier ziet de kubus er overtuigender uit.
+
+Dit is daar het eindresultaat van.
+
+<img src="./images/invertCube.gif" WIDTH="400px">
 
 ### Waar liep ik tegen aan?
+
+* Knop om te draaien
+
+Waar ik deze week enorm tegen aan liep was om een knop te maken en zo de vlakken te laten draaien. Pas in het laatste uur kwam ik op een idee om dit te verbeteren, wat ik enorm jammer vind. Dit is dan ook helaas niet meer gelukt.
+
+### Wat ik nog had willen doen
+
+Ik ben enorm tevreden wat ik neer heb gezet. Vooral omdat ik nog niet eerder heb gewerkt met perspectief, 3d en interactie in CSS met input. 
+
+| | Gedaan |
+| ------------- | ------------- |
+| 1 kubus maken | ✅ |
+| 27 kubussen positioneren om een rubiks cube te maken | ✅ |
+| Knoppen om de kubus te laten draaien | ✅ |
+| Invert Colors | ✅ |
+| 1 kant laten draaien | ✅ |
+| Opmaak voor de kubus | ✅ |
+| Meerdere kanten laten draaien | - |
+| Knoppen om minimaal 1 kant te laten draaien | - |
+
+### Waar ben ik blij mee?
+
+Ik ben enorm blij dat het uberhaupt gelukt is om een kubus te maken, maar waar ik helemaal tevreden mee ben is dat het me gelukt is om alle 8 knoppen op 3 knoppen te laten lijken.
+
+Daarnaast ben ik enorm blij het je vanaf iedere zijnde omhoog en omlaag kan kijken bij de kubus. 
+
+En tot slot ben ik enorm blij dat het met gelukt is om alles te doen met 1 var. Achteraf had ik beter meer variabelen kunnen gebruiken en dat zal ik in de toekomst ook zeker doen.
