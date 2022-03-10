@@ -57,5 +57,4 @@ li {
     width: calc(var(--cube-width));
     height: calc(var(--cube-width));
     opacity: 1;
-    border-radius: .4em;
 }
